@@ -1,0 +1,14 @@
+{
+  "name": "ibm",
+  "version": "1.0.0",
+  "description": "Ibm Calculator with node.js",
+  "main": "ibm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "codewithkevin",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
