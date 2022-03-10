@@ -1,6 +1,6 @@
 const express = require("express")
 
-const bodypasser = require("body-passer")
+const bodypasser = require("body-parser")
 
 const app = express()
 
