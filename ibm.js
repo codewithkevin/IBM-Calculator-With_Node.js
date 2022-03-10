@@ -2,4 +2,6 @@ const express = require("express")
 
 const app = express()
 
-app.get("/")
+app.get("/", function (req, res){
+    res.sendFile
+})
