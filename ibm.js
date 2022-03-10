@@ -1,20 +1,29 @@
-var http = require('http');
-var router = require('./router.js');
+const express = require("express")
 
-var server = http.createServer(function (request, response) {
+const bodypasser = require("body-parser");
 
-response.writeHead(200,{"Content-type" : "text/css"});
-var fileContents = fs.readFileSync('./views/styles.css', {encoding: "utf8"}, function(err, data) {
- if (!err) {
-   response.write(data);
-} else {
-  console.log(err);
-}
-});
+const app = express()
 
-  router.home(request, response);
-  router.user(request, response);
+app.use(bodypasser.urlencoded({extended: true}));
 
-});
+app.use('/css', express.static(__dirname + "/css"))
 
-server.listen(3000);
+app.get("/", function (req, res){
+    res.sendFile(__dirname + "/index.html")
+})
+
+
+app.post("/", function(req, res){
+    var num1 = req.body.num1;
+    
+    var num2 = req.body.num2;
+
+    var result = num1 + num2;
+
+    res.send("Your result is: " + result)
+})
+
+
+app.listen(4000, function(){
+    console.log("Server is running on port 4000")
+})
