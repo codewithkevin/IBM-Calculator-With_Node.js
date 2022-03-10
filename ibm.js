@@ -1,27 +1,20 @@
-const express = require("express")
+var http = require('http');
+var router = require('./router.js');
 
-const bodypasser = require("body-parser")
+var server = http.createServer(function (request, response) {
 
-const app = express()
+response.writeHead(200,{"Content-type" : "text/css"});
+var fileContents = fs.readFileSync('./views/styles.css', {encoding: "utf8"}, function(err, data) {
+ if (!err) {
+   response.write(data);
+} else {
+  console.log(err);
+}
+});
 
-app.use(bodypasser.urlencoded({extended: true}));
+  router.home(request, response);
+  router.user(request, response);
 
-app.get("/", function (req, res){
-    res.sendFile(__dirname + "/index.html")
-})
+});
 
-
-app.post("/", function(req, res){
-    var num1 = req.body.num1;
-    
-    var num2 = req.body.num2;
-
-    var result = num1 + num2;
-
-    res.send("Your result is: " + result)
-})
-
-
-app.listen(4000, function(){
-    console.log("Server is running on port 4000")
-})
+server.listen(3000);
