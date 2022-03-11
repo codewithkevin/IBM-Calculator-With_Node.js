@@ -37,9 +37,9 @@ body {
 	position: relative;
 }
 
-.form-control label {
-	display: inline-block;
-	margin-bottom: 5px;
+.work-section {
+    margin-bottom: 30px;
+    margin-top: -20px;
 }
 
 .form-control input {
