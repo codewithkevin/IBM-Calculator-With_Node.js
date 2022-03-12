@@ -1,178 +1,65 @@
-*{
-    box-sizing: border-box;
-}
-
-body {
+body{
     margin: 0;
     padding: 0;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    background-image: linear-gradient(120deg,#ff6b6b, #5f27cd);
     min-height: 100vh;
-    display: flex;
 }
-
-.container {
-	background-color: white;
-	border-radius: 5px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-	overflow: hidden;
-	width: 400px;
-	max-width: 100%;
+div{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px #ee5253;
 }
-
-.header {
-	border-bottom: 1px solid dodgerblue;
-	background-color: darkgray;
-	padding: 10px 30px;
-    cursor: pointer;
+h2{
+    font-size: 30px;
+    font-weight: 600;
 }
-
-.form {
-	padding: 40px 40px;	
+.text{
+    text-align: left;
+    margin-left: 150px;
 }
-
-.form-control {
-	margin-bottom: 20px;
-	padding-bottom: 10px;
-	position: relative;
+#w, #h{
+    color: #222f3e;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #341f97;
+    width: 200px;
 }
-
-.work-section {
-    margin-bottom: 30px;
-    margin-top: -20px;
-}
-
-.form-control input {
-	border: 2px solid #f0f0f0;
-	border-radius: 4px;
-	display: block;
-	font-family: inherit;
-	font-size: 14px;
-	padding: 10px;
-	width: 100%;
-}
-
-.form-control input:focus {
-	outline: 0;
-	border-color: #777;
-}
-
-.form-control.success input {
-	border-color: #2ecc71;
-}
-
-.form-control.error input {
-	border-color: #e74c3c;
-}
-
-.form-control i {
-	visibility: hidden;
-	position: absolute;
-	top: 40px;
-	right: 10px;
-}
-
-.form-control.success i.fa-check-circle {
-	color: #2ecc71;
-	visibility: visible;
-}
-
-.form-control.error i.fa-exclamation-circle {
-	color: #e74c3c;
-	visibility: visible;
-}
-
-.form-control small {
-	color: #e74c3c;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	visibility: hidden;
-}
-
-.form-control.error small {
-	visibility: visible;
-}
-
-.form button {
-	background-color: cadetblue;
-	border: 2px solid cadetblue;
-	border-radius: 4px;
-	color: #fff;
-	display: block;
-	font-family: inherit;
-	font-size: 16px;
-	padding: 10px;
-	margin-top: 20px;
-	width: 100%;
-}
-
-.form button:hover {
-    background-color: white;
-	color: #001F61;
-    cursor: pointer;
-}
-
-.dark-mode {
-    background: #0b0a14;
-}
-
-.floating-btn {
-	border-radius: 26.5px;
-	background-color: #001F61;
-	border: 1px solid #001F61;
-	box-shadow: 0 16px 22px -17px #03153B;
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px;
-	line-height: 20px;
-	padding: 12px 20px;
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	z-index: 999;
-}
-
-.floating-btn:hover {
-	background-color: #ffffff;
-	color: #001F61;
-}
-
-.floating-btn:focus {
-	outline: none;
-}
-
-
-.floating-text {
-	background-color: #001F61;
-	border-radius: 10px 10px 0 0;
-	color: #fff;
-	font-family: 'Muli';
-	padding: 7px 15px;
-	position: fixed;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	text-align: center;
-	z-index: 998;
-    margin-bottom: 30px;
-    cursor: pointer;
-}
-
-
-.floating-text a {
-	color: #FF7500;
-	text-decoration: none;
-} 
-
-
-@media screen and (max-width: 480px) {
-
-	.social-panel-container.visible {
-		transform: translateX(0px);
-	}
-	
-	.floating-btn {
-		right: 10px;
-	}
-}
+    #w:focus, #h:focus{
+        border-bottom: 2px solid #341f97;
+        width: 300px;
+        transition: 0.5s;
+    }
+    #result{
+        color: #341f97;
+    }
+    #btn{
+        font-family: inherit;
+        margin-top: 10px;
+        border: none;
+        color: #fff;
+        background-image: linear-gradient(120deg,#ff6b6b, #5f27cd);
+        width: 150px;
+        padding: 10px;
+        border-radius: 30px;
+        outline: none;
+        cursor: pointer;
+    }
+    #btn:hover{
+        box-shadow: 1px 1px 10px #341f97;
+    }
+    #info{
+        font-size: 12px;
+        font-family: inherit;
+    }
