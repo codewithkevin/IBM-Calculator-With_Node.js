@@ -3,7 +3,7 @@ body{
     padding: 0;
     text-align: center;
     font-family: sans-serif;
-    background-image: linear-gradient(120deg,#ff6b6b, #5f27cd);
+    background-image: linear-gradient(120deg,#000000, #0066ff);
     min-height: 100vh;
 }
 div{
@@ -15,7 +15,7 @@ div{
     transform: translate(-50%, -50%);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 1px 1px 20px #ee5253;
+    box-shadow: 1px 1px 20px #00ffd5;
 }
 h2{
     font-size: 30px;
@@ -33,11 +33,11 @@ h2{
     outline: none;
     border: none;
     background: none;
-    border-bottom: 1px solid #341f97;
+    border-bottom: 1px solid #4b274b;
     width: 200px;
 }
     #w:focus, #h:focus{
-        border-bottom: 2px solid #341f97;
+        border-bottom: 2px solid #16bdff;
         width: 300px;
         transition: 0.5s;
     }
@@ -49,7 +49,7 @@ h2{
         margin-top: 10px;
         border: none;
         color: #fff;
-        background-image: linear-gradient(120deg,#ff6b6b, #5f27cd);
+        background-image: linear-gradient(120deg,#ff0000, #003cff);
         width: 150px;
         padding: 10px;
         border-radius: 30px;
