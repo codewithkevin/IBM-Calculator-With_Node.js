@@ -17,15 +17,10 @@ app.get("/", function (req, res){
 })
 
 
-app.post("/", function(req, res){
-    var num1 = req.body.num1;
-    
-    var num2 = req.body.num2;
+// app.post("/", function(req, res){
 
-    var result = num1 + num2;
-
-    res.send("Your result is: " + result)
-})
+//     res.send("Your result is: " + result)
+// })
 
 
 app.listen(4000, function(){
