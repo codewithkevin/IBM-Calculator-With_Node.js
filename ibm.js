@@ -4,9 +4,13 @@ const bodypasser = require("body-parser");
 
 const app = express()
 
+//Files 
+
 app.use(bodypasser.urlencoded({extended: true}));
 
 app.use('/css', express.static(__dirname + "/css"))
+
+app.use('/script', express.static(__dirname + "/script"))
 
 app.get("/", function (req, res){
     res.sendFile(__dirname + "/index.html")
