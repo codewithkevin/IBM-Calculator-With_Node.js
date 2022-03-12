@@ -11,23 +11,15 @@
 <body>
 
 
-    <div class="container">
-        <div class="header">
-            <h1>IBM CALCULATOR</h1>
-        </div>
-
-        <div class="work-section">
-            
-
-            <form class="form" action="/" method="post">
-                <h3><input type="checkbox" name="male">Male</h3>
-                <h3><input type="checkbox" name="male">Female</h3>
-                <input class="form-control" type="text" name="num1" placeholder="First Number">
-                <input class="form-control" type="text" name="num2" placeholder="Second Number">
-                <button type="submit" name="sumbit">Calculator</button>
-            </form>
-
-        </div>
+    <div>
+        <h2>BMI Calculator</h2>
+        <p class="text">Height</p>
+        <input type="text" id="h">
+        <p class="text">Weight</p>
+        <input type="text" id="w">
+        <p id="result"></p>
+        <button id="btn" onClick="BMI()">Calculate</button>
+        <p id="info">Please enter height [cm] and weight [kg]</p>
     </div>
     
 </body>
