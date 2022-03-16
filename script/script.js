@@ -9,7 +9,17 @@ function BMI() {
         document.getElementById("result").innerHTML="Your BMI is " + bmio + " you are under weight";
     }
 
-    else if(bmio > 45  )
+    else if(bmio > 45 && bmio < 75){
+        document.getElementById("result").innerHTML="Your BMI is " + bmio + " you are on diet";
+    }
 
-    document.getElementById("result").innerHTML="Your BMI is " + bmio;
+    else if(bmio >= 75 && bmio < 90){
+        document.getElementById("result").innerHTML="Your BMI is " + bmio + " you have weight";
+    }
+
+    else{
+        document.getElementById("result").innerHTML="Your BMI is " + bmio + " you are over wight";
+    }
+
+    
 }
