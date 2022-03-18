@@ -3,7 +3,8 @@ body{
     padding: 0;
     text-align: center;
     font-family: sans-serif;
-    background-image: linear-gradient(120deg,#000000, #000000);
+    /* background-image: linear-gradient(120deg,#000000, #000000); */
+
     min-height: 100vh;
 }
 div{
@@ -16,7 +17,7 @@ div{
     transform: translate(-50%, -50%);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 1px 1px 20px #00ffd5;
+    /* box-shadow: 1px 1px 20px #00ffd5; */
 }
 h2{
     font-size: 30px;
